@@ -1,3 +1,4 @@
+
 <?php
 require 'vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
@@ -18,3 +19,6 @@ try {
     // Gestion des erreurs
     echo "Erreur de connexion à la base de données: " . $e->getMessage();
 }
+
+?>
+<?php include "commun/footer.php" ?>

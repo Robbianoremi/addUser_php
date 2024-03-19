@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UserMan</title>
-</head>
-<body>
-    <form method="POST" action="addUser.php">
-        <label for="name">Username</label>
-        <input type="text" name="name" id="name">
-        <input type="submit">
-    </form>
-</body>
-</html>
+<?php include "commun/head.php";
+include "commun/header.php" ?>
+
 <?php
 session_start(); // Démarre la session pour pouvoir utiliser $_SESSION
 
@@ -35,4 +23,5 @@ foreach ($users as $user) {
         echo '<li>' . htmlspecialchars($user['name']) . '</li>';
 }
 echo '</ul>';
+
 

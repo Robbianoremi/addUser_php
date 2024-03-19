@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <?php
 session_start(); // Démarre la session pour pouvoir utiliser $_SESSION
 if (isset($_POST['name'])) {
@@ -31,3 +37,7 @@ if (isset($_POST['name'])) {
     header('Location: index.php'); // Redirigez l'utilisateur vers la page d'accueil
     exit; // Assurez-vous de terminer le script après la redirection
 }
+
+
+
+
